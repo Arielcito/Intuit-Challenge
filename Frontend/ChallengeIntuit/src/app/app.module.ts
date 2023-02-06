@@ -7,6 +7,7 @@ import { WeatherServiceService } from 'src/Services/weather-service.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WeatherComponent } from './components/weather/weather.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { WeatherComponent } from './components/weather/weather.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [WeatherServiceService],
   bootstrap: [AppComponent]
